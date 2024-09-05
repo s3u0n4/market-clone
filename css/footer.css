@@ -25,6 +25,23 @@ footer{
     margin-top: 10px;
     font-weight: bold;
 }
+@keyframes icons-float{
+    0%{
+        translate: traslateY(-10px);
+    }
+    30%{
+        translate: traslateY(-10px);
+    }
+    70% {
+        translate: traslateY(-10px);
+    }
+    100% {
+        translate: traslateY(0px);
+    }
+}
 .footer-icons__img{
     width: 30px;
+}
+.footer-icons:hover .footer-icons__img{
+    animation: 2s icons-float ;
 }
